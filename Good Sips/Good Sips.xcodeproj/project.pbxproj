@@ -11,6 +11,23 @@
 		5A61CBDD27C999F70008ED46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A61CBDC27C999F70008ED46 /* ContentView.swift */; };
 		5A61CBDF27C999F80008ED46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A61CBDE27C999F80008ED46 /* Assets.xcassets */; };
 		5A61CBE227C999F80008ED46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A61CBE127C999F80008ED46 /* Preview Assets.xcassets */; };
+		5A75FC3A27CD6F1400F928E4 /* MasterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75FC3927CD6F1400F928E4 /* MasterList.swift */; };
+		5A75FC3C27CD7E2700F928E4 /* MySips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75FC3B27CD7E2700F928E4 /* MySips.swift */; };
+		5A75FC3E27CD9E2700F928E4 /* BarTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75FC3D27CD9E2700F928E4 /* BarTabs.swift */; };
+		5A75FC4027CDB69900F928E4 /* Roulette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75FC3F27CDB69900F928E4 /* Roulette.swift */; };
+		5A75FC4227CDBB5E00F928E4 /* DrinkProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75FC4127CDBB5E00F928E4 /* DrinkProfile.swift */; };
+		5A75FC4427CDC06100F928E4 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75FC4327CDC06100F928E4 /* Featured.swift */; };
+		5A75FC4627CDC09000F928E4 /* DrinkSubmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75FC4527CDC09000F928E4 /* DrinkSubmission.swift */; };
+		5A75FC4827D1969700F928E4 /* PersonalDrinkProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75FC4727D1969700F928E4 /* PersonalDrinkProfile.swift */; };
+		5A75FC4A27D2B04200F928E4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75FC4927D2B04200F928E4 /* MainView.swift */; };
+		5A75FC4C27D2EA0100F928E4 /* BarTabList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75FC4B27D2EA0100F928E4 /* BarTabList.swift */; };
+		5A75FC5027D3063900F928E4 /* RatingSubmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75FC4F27D3063900F928E4 /* RatingSubmission.swift */; };
+		5A75FC5227D58A1400F928E4 /* ProfileSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75FC5127D58A1400F928E4 /* ProfileSettings.swift */; };
+		5AE338F627D5B91F0035364A /* MasterListBeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE338F527D5B91F0035364A /* MasterListBeer.swift */; };
+		5AE338F827D5B9440035364A /* MasterListLiquor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE338F727D5B9440035364A /* MasterListLiquor.swift */; };
+		5AE338FA27D5B9580035364A /* MasterListWine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE338F927D5B9580035364A /* MasterListWine.swift */; };
+		5AE338FC27D5B9660035364A /* MasterListMocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE338FB27D5B9660035364A /* MasterListMocktail.swift */; };
+		5AE338FE27D5BDD40035364A /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE338FD27D5BDD40035364A /* FavoritesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +36,23 @@
 		5A61CBDC27C999F70008ED46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5A61CBDE27C999F80008ED46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A61CBE127C999F80008ED46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A75FC3927CD6F1400F928E4 /* MasterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterList.swift; sourceTree = "<group>"; };
+		5A75FC3B27CD7E2700F928E4 /* MySips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySips.swift; sourceTree = "<group>"; };
+		5A75FC3D27CD9E2700F928E4 /* BarTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarTabs.swift; sourceTree = "<group>"; };
+		5A75FC3F27CDB69900F928E4 /* Roulette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roulette.swift; sourceTree = "<group>"; };
+		5A75FC4127CDBB5E00F928E4 /* DrinkProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkProfile.swift; sourceTree = "<group>"; };
+		5A75FC4327CDC06100F928E4 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
+		5A75FC4527CDC09000F928E4 /* DrinkSubmission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkSubmission.swift; sourceTree = "<group>"; };
+		5A75FC4727D1969700F928E4 /* PersonalDrinkProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDrinkProfile.swift; sourceTree = "<group>"; };
+		5A75FC4927D2B04200F928E4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5A75FC4B27D2EA0100F928E4 /* BarTabList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarTabList.swift; sourceTree = "<group>"; };
+		5A75FC4F27D3063900F928E4 /* RatingSubmission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingSubmission.swift; sourceTree = "<group>"; };
+		5A75FC5127D58A1400F928E4 /* ProfileSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettings.swift; sourceTree = "<group>"; };
+		5AE338F527D5B91F0035364A /* MasterListBeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterListBeer.swift; sourceTree = "<group>"; };
+		5AE338F727D5B9440035364A /* MasterListLiquor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterListLiquor.swift; sourceTree = "<group>"; };
+		5AE338F927D5B9580035364A /* MasterListWine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterListWine.swift; sourceTree = "<group>"; };
+		5AE338FB27D5B9660035364A /* MasterListMocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterListMocktail.swift; sourceTree = "<group>"; };
+		5AE338FD27D5BDD40035364A /* FavoritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +86,24 @@
 			isa = PBXGroup;
 			children = (
 				5A61CBDA27C999F70008ED46 /* Good_SipsApp.swift */,
+				5A75FC4927D2B04200F928E4 /* MainView.swift */,
 				5A61CBDC27C999F70008ED46 /* ContentView.swift */,
+				5A75FC4527CDC09000F928E4 /* DrinkSubmission.swift */,
+				5A75FC3927CD6F1400F928E4 /* MasterList.swift */,
+				5AE338F927D5B9580035364A /* MasterListWine.swift */,
+				5AE338FB27D5B9660035364A /* MasterListMocktail.swift */,
+				5AE338F727D5B9440035364A /* MasterListLiquor.swift */,
+				5AE338F527D5B91F0035364A /* MasterListBeer.swift */,
+				5A75FC4127CDBB5E00F928E4 /* DrinkProfile.swift */,
+				5A75FC3F27CDB69900F928E4 /* Roulette.swift */,
+				5A75FC4327CDC06100F928E4 /* Featured.swift */,
+				5A75FC4F27D3063900F928E4 /* RatingSubmission.swift */,
+				5A75FC3B27CD7E2700F928E4 /* MySips.swift */,
+				5A75FC4727D1969700F928E4 /* PersonalDrinkProfile.swift */,
+				5A75FC3D27CD9E2700F928E4 /* BarTabs.swift */,
+				5AE338FD27D5BDD40035364A /* FavoritesList.swift */,
+				5A75FC4B27D2EA0100F928E4 /* BarTabList.swift */,
+				5A75FC5127D58A1400F928E4 /* ProfileSettings.swift */,
 				5A61CBDE27C999F80008ED46 /* Assets.xcassets */,
 				5A61CBE027C999F80008ED46 /* Preview Content */,
 			);
@@ -137,8 +188,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AE338FC27D5B9660035364A /* MasterListMocktail.swift in Sources */,
+				5A75FC4627CDC09000F928E4 /* DrinkSubmission.swift in Sources */,
+				5A75FC4A27D2B04200F928E4 /* MainView.swift in Sources */,
+				5A75FC4427CDC06100F928E4 /* Featured.swift in Sources */,
 				5A61CBDD27C999F70008ED46 /* ContentView.swift in Sources */,
+				5AE338F627D5B91F0035364A /* MasterListBeer.swift in Sources */,
+				5A75FC4827D1969700F928E4 /* PersonalDrinkProfile.swift in Sources */,
 				5A61CBDB27C999F70008ED46 /* Good_SipsApp.swift in Sources */,
+				5AE338FA27D5B9580035364A /* MasterListWine.swift in Sources */,
+				5A75FC3E27CD9E2700F928E4 /* BarTabs.swift in Sources */,
+				5A75FC5227D58A1400F928E4 /* ProfileSettings.swift in Sources */,
+				5A75FC3A27CD6F1400F928E4 /* MasterList.swift in Sources */,
+				5A75FC3C27CD7E2700F928E4 /* MySips.swift in Sources */,
+				5AE338FE27D5BDD40035364A /* FavoritesList.swift in Sources */,
+				5A75FC4C27D2EA0100F928E4 /* BarTabList.swift in Sources */,
+				5A75FC4227CDBB5E00F928E4 /* DrinkProfile.swift in Sources */,
+				5A75FC5027D3063900F928E4 /* RatingSubmission.swift in Sources */,
+				5AE338F827D5B9440035364A /* MasterListLiquor.swift in Sources */,
+				5A75FC4027CDB69900F928E4 /* Roulette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
