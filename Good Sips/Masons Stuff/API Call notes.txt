@@ -1,0 +1,121 @@
+Need:
+Completion Handlers
+-only time I need to reference the completion handler is inside the function declaration
+-Will give back data. Data will be named so you can refer to it.
+ex.
+(functionName)() { (dataName) in
+//do something with data
+	print(films)
+}
+URLSession
+-Manages the process
+	-manages dataTasks
+-When data is needed use this: URLSession.shared.dataTask
+-You can give dataTask different information. 
+-Giving dataTask different information initializes dataTask.
+Ex. of initializing dataTask
+----------------------------------------------------------------------------------------------------------------
+let url = URL(string: "www.urlgoeshere.com")
+
+let task = URLSession.shared.dataTask(with: url, completionHandler: { data, response, error) in
+	//code goes here
+})
+----------------------------------------------------------------------------------------------------------------
+
+dataTasks use completion handlers, and always return the same types of information: data, response, and error.
+These types of information can be given different names. ex. randomDataName, dumbResponseName, stupidVariable
+
+explanation of data, response, and error
+Data:
+Uses JSONDecoder (need to research first, also look into Codable) to parse the data in a nice way.
+Before we can use JSONDecoder, we need to establish a model (maybe similar to view models? Not sure).
+The below code checks if the data exists:
+if let data = data,
+	let (modelName) = try? JSONDecoder().decode((modelName).self, from: data) {
+	completionHandler((modelName).results ?? [])
+}
+
+Response:
+The response returned by dataTask can be cast as an httpResponse allowing for the code to see the status of the page it is looking at.
+Ex. useage for response: if the status code of the page is 404 then the page is not found.
+
+When checking the response of the page you can use a guard to check for specic status'
+Ex. of using a guard:
+guard let httpResponse = response as? HTTPURLResponse,
+		(200...299).contains(httpResponse.statusCode) else{
+	print("Error with the response, unexpected status code: \(response)")
+	return
+}
+In the above example the guard is checking for any status codes between 200 and 299, all of these responses are successful responses.
+For more information related to http responses you can use this website: https://www.belugacdn.com/http-response-codes/#:~:text=HTTP%20response%20codes%20200%20%E2%80%93%20299,a%20certain%20problem%20was%20solved.
+
+Error:
+if dataTask returns an error, instead of trying to read the data it will allow you to direct the code to handle the error.
+ex. of handling an error dataTask returned
+if let error = error {
+	print("Error accessing (content): /(error)")
+	return
+}
+
+note: /(error) prints the error returned by dataTask, I believe
+
+Ex. of full API code:
+func (functionName)(completionHandler: @escaping ([(dataName)]) -> Void) {
+	let url = URL(string: www.urlgoeshere.com + "dataName")!
+
+	let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
+	  if let error = error {
+	  print("Error: \(error)")
+	  return
+	  }
+	
+	guard let httpResponse = response as? HTTPURLResponse,
+		(200...299).contains(httpResponse.statusCode) else {
+	print("Error: \(response)")
+	return
+	}
+
+	if let data = data,
+	 let (modelName) = try? JSONDecoder().decode((modelName).self, from: data) {
+	 completionHandler(filmSummary.results ?? [])
+	 }
+	})
+	 task.resume()
+}
+
+
+DispatchQueue
+Basically just a queue for API access
+ex. of this code:
+
+(functionName) { [weak self] (dataName) in
+	self.(dataName) = (dataName)
+	//below refreshes the data
+	DispatchQueue.main.async {
+		tableView.reloadData()
+	}
+}
+
+
+Retain Cycles
+-important for memory management
+-helps with cleaning up bits of memory that isn't needed.
+-a retain cycle means that the app will always hold onto the memory for a certain piece of code.
+
+To work around this people commonly use "weak". When one side of the code is weak, you don't have a retain cycle, and your app will be able to release the memory.
+Calling the API should look like this:
+(functionName) { [weak self] (dataName) in
+//code
+}
+
+
+
+The last step is deciding where to call the function to pull the API data, you can do this in either viewDidLoad and viewDidAppear
+viewDidLoad is called the first time you load that view in the foreground (Apple suggests using viewDidLoad)
+viewDidAppear is called every time you return to that view (ex. pressing a back button and returning to the view)
+
+
+Source: https://www.freecodecamp.org/news/how-to-make-your-first-api-call-in-swift/
+
+
+
