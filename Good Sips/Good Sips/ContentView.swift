@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Foundation
+import UIKit
 
 
 struct ContentView: View {
@@ -41,74 +43,70 @@ struct ContentView: View {
                     Spacer()
                 }
                 .edgesIgnoringSafeArea(.top)
-                HStack{ // Search Bar - MASON: make search function
-                    Image("search bar icon")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 25, height: 25)
-                    TextField("Search for Drinks or Ingredients", text: $searchText)
-                        .padding(8.0)
-                }
+
                 .background()
                 VStack {
                     
                     Spacer()
-                    HStack{ // Search Bar - MASON: make search function
-                        Image("search bar icon")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 25, height: 25)
-                        TextField("Search for Drinks or Ingredients", text: $searchText)
-                            .padding(8.0)
-                    }
+                   
+                        NavigationLink(destination: DrinkUIView())
+                        {
+                            Text("Search Database")
+                                .frame(width: 340, height: 75)
+                                .background(Color(red: 116/255, green: 149/255, blue: 154/255))
+                                .font(.system(size: 25))
+                                .foregroundColor(Color.white)
+
+            
+                        }
                     .background()
                     Spacer()
-                                     //   VStack {
-                                            HStack {
-                                                VStack {
 
+                                            HStack {
+                                                Spacer()
+                                                VStack {
+                                                    Spacer()
                                                     NavigationLink(destination: MasterListBeer()){
                                                         Text("BEER")
                                                             .frame(width: 150, height: 150)
                                                             .background(Color(red: 116/255, green: 149/255, blue: 154/255))
                                                             .font(.system(size: 25))
                                                             .foregroundColor(Color.white)
-                                                            .padding()
-                                                            .cornerRadius(60)
+                                                            .cornerRadius(10)
                                                     }
-                    
+                                                    Spacer()
                                                     NavigationLink(destination: MasterListMocktail()){
                                                         Text("MOCKTAILS")
                                                             .frame(width: 150, height: 150)
                                                             .background(Color(red: 116/255, green: 149/255, blue: 154/255))
                                                             .font(.system(size: 25))
                                                             .foregroundColor(Color.white)
-                                                            .padding()
-                                                            .cornerRadius(60)
+                                                            .cornerRadius(10)
                                                     }
+                                                    Spacer()
                                                 }
                                                 VStack {
+                                                    Spacer()
                                                     NavigationLink(destination: MasterListLiquor()){
                                                         Text("LIQUOR")
                                                             .frame(width: 150, height: 150)
                                                             .background(Color(red: 116/255, green: 149/255, blue: 154/255))
                                                             .font(.system(size: 25))
                                                             .foregroundColor(Color.white)
-                                                            .padding()
-                                                            .cornerRadius(60)
+                                                            .cornerRadius(10)
                                                             }
-                    
+                                                    Spacer()
                                                     NavigationLink(destination: MasterListWine()){
                                                         Text("WINE")
                                                             .frame(width: 150, height: 150)
                                                             .background(Color(red: 116/255, green: 149/255, blue: 154/255))
                                                             .font(.system(size: 25))
                                                             .foregroundColor(Color.white)
-                                                            .padding()
-                                                            .cornerRadius(60)
+                                                            .cornerRadius(10)
                                                             }
+                                                    Spacer()
                                                 }
-                    
+                                                Spacer()
                                             }
                                             NavigationLink(destination: Roulette()){
                                                 Text("ROULETTE")
@@ -116,19 +114,18 @@ struct ContentView: View {
                                                     .background(Color(red: 116/255, green: 149/255, blue: 154/255))
                                                     .font(.system(size: 25))
                                                     .foregroundColor(Color.white)
-                                                    .padding()
-                                                    .cornerRadius(60)
+                                                    .cornerRadius(10)
                                             }
+                                            Spacer()
                                             NavigationLink(destination: Featured()){
                                                 Text("FEATURED")
                                                     .frame(width: 340, height: 75)
                                                     .background(Color(red: 116/255, green: 149/255, blue: 154/255))
                                                     .font(.system(size: 25))
                                                     .foregroundColor(Color.white)
-                                                    .padding()
-                                                    .cornerRadius(60)
+                                                    .cornerRadius(10)
                                                 }
-                    
+                                            Spacer()
                                             }
                                         .background{
                                             Image("Bar photo")

@@ -45,9 +45,11 @@ struct DrinkProfile: View {
                                     Image("Bar photo")
                                         .resizable()
                                         .frame(width: 100, height: 100, alignment: .top)
-                                    Text("Ingredients")
-                                        .bold()
-                                    // for loop displaying ingredients
+                                    VStack {
+                                        Text("Ingredients")
+                                            .bold()
+                                        // Jordan/Mason - for loop displaying ingredients
+                                    }
                                 }
                                 Spacer()
                                 HStack {
@@ -57,7 +59,7 @@ struct DrinkProfile: View {
                                     
                                 }
                                 Spacer()
-                                // MASON - implement 'leave a review' navigation link above listed reviews to link to "Rating Submission"
+                                // MASON/JORDAN - implement 'leave a review' navigation link above listed reviews to link to "Rating Submission"
                                 // for loop to 20 calling array of arrays: reviews identified by name, carries rating and comments
                                 
                             // REVIEWS

@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import Combine
 
 struct BarTabs: View {
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -26,16 +28,16 @@ struct BarTabs: View {
                 }
                 .edgesIgnoringSafeArea(.top)
                 .background()
-                            
+
                 ScrollView{
-                    
+
                     // MASON - bar tabs ordered alphabetically after favorites
                     // MASON - store bar tabs
-                    
+
                     //Potential Method for implementing result list
                     /* ForEach((0..<Array.AlcCategory){
                      // NAVIGATE TO personal DRINK PROFILE
-                     
+
                      Text("\Array.Bar Tabs")
                      Spacer()
                      .padding()
@@ -45,33 +47,33 @@ struct BarTabs: View {
                      .padding(.leading)
                      }
                      */
-                    
+
                     NavigationLink(destination: FavoritesList()){
                             Text("FAVORITES")
                             Spacer()
                             }.padding()
-                    
-                    
+
+
                             Divider()
                             .background(Color(.systemGray4))
                             .padding(.leading)
-                    
+
                     NavigationLink(destination: BarTabList()){
                             Text("TESTER")
                             Spacer()
                             }.padding()
-                    
-                    
+
+
                             Divider()
                             .background(Color(.systemGray4))
                             .padding(.leading)
 
                 }
-                
 
-                
+
+
                 // MASON - at bottom of list put button labeled "Add a Bar Tab..." that has a pop up that asks for list name and then adds name to bar tab list
-                
+
         }
         .navigationBarTitleDisplayMode(.inline)
 

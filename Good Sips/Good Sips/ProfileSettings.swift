@@ -29,6 +29,7 @@ struct ProfileSettings: View {
                         
                         
 // JORDAN - add page that holds phonenumber, username and password : should be an option to change password, username and phonenumber
+// Kate - look into security measures
                         
                     }
                 }
